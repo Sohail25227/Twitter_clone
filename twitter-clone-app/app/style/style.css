@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f0f11;
+
+}
+
+.container{
+     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #0f0f11;
+}
+
+.nav-container{
+    width: 20%;
+    max-width:100px;
+    min-width: 70px;
+    border: 2px solid #1c1c1c;
+
+}
+.navigation{
+    position: fixed;
+    width: 20%;
+    max-width:100px;
+    min-width: 70px;
+
+}
+.main{
+   
+     flex:1;                               /* left over space me kitna hisssa */
+     display: flex;
+     flex-direction: column;
+
+}
+.tweets-sidebar-container{
+    flex: 1;
+    display: flex;
+
+}
+/* inside main */
+.tweets-search-container{
+    margin: 20px;
+    margin-top: 45px;
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid #979797;
+}
+.tweets-search-container input{
+    flex:1;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tweets-search-container input:focus{
+    border: none;
+    outline: none;
+}
+
+.tweets-search-container i{
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.tweets-list{
+   
+    margin: 20px;
+    margin-top: 0;
+} 
+
+/* main end */
+
+.tweets-sidebar{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    margin-top: 50px;
+    background-color: white;
+    border: 3 px solid #979797;
+    border-radius: 40px;
+    overflow: hidden;
+    position: fixed;
+}
+.tweets-trending{
+    height: 280px;
+    background-color: #f2f2f2;
+    margin: 10px;
+    border-radius:40px ;
+    padding-top: 20px;
+    font-weight: 600;
+    
+}
+.tweets-trending h4{
+    font-size: 15px;
+    color: #848586;
+    margin-top: 0;
+    padding-left: 13px;
+    margin-bottom: 10px;
+}
+.tweets-trending ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.tweets-trending ul li{
+    color: #a5a5a6;
+    border-top: 1px solid #d8d8d8;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+
+/* navigation contents */
+
+.navigation{
+    color: white;
+    margin-top: 30px;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    transition:all .9s ease;
+}
+.logo i:hover{
+    color: #00ADFF;
+    
+}
+.home-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 14px;
+    border-right: 4px solid #00ADFF;
+    height: 33px;
+    color: #00ADFF;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #979797;
+    margin-top: 20px;
+    background-image: url(../profilepic/pp.jpeg);
+    background-position:center ;
+    background-size: cover;
+}
+
+.next-page-container{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    padding: 4px;
+    border-radius: 25px;
+    color: #47525d;
+    border:2px solid #1c1c1c;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    visibility: hidden;
+}
+.next-page-container:hover{
+    background-color:#1C1C1C ;
+}
